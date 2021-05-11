@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- vue cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <!-- vue axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.js" ></script>
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Vue-Email-List</title>
+</head>
+<body>
+    <div id="list">
+        
+        <h1>Lista E'mail</h1>
+        <div  v-if="mailLIst.length === 10">
+            <ul>
+                <li v-for="email in mailLIst">{{ email }}</li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
